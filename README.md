@@ -19,12 +19,13 @@ samples, guidance on mobile development, and a full API reference.
 
 ###
  1.使用 在pubspec.yaml中引入
-    ```
-    weight_plugin:
-         git:
-           url: https://github.com/wucan871952374/weight_plugin.git
-           ref: master
-    ```
+
+     ```
+     weight_plugin:
+              git:
+                url: https://github.com/wucan871952374/weight_plugin.git
+                ref: master
+     ```
 
  2.首先进行插件初始化，传入设备类型，目前仅支持商米
 
