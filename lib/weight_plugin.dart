@@ -8,7 +8,7 @@ class WeightPlugin {
   static const MethodChannel _channel = const MethodChannel('weight_plugin');
 
   // ignore: close_sinks
-  static StreamController<MethodCall>? _weightStreamController;
+  static StreamController<MethodCall> _weightStreamController = StreamController<MethodCall>.broadcast();
 
   static Future<String> get platformVersion async {
     final String version = await _channel.invokeMethod('getPlatformVersion');
@@ -43,9 +43,6 @@ class WeightPlugin {
   }
 
   static Stream<MethodCall>? get weightStream {
-    if (_weightStreamController == null) {
-      _weightStreamController = StreamController<MethodCall>.broadcast();
-    }
-    return _weightStreamController?.stream;
+    return _weightStreamController.stream;
   }
 }
