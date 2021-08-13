@@ -30,7 +30,7 @@ class WeightPlugin {
   }
 
   static Future<dynamic> _onChannelMethodHandler(MethodCall call) async {
-    _weightStreamController?.sink.add(call);
+    _weightStreamController.sink.add(call);
     return "success";
   }
 
