@@ -25,6 +25,10 @@ class WeightProvider{
                 SunWeightImp.instance
             }
 
+            DeviceType.FRESHBASE -> {
+                FreshBaseWeightImp.instance
+            }
+
             else -> {
                 UNKnowWeightImp.instance
             }

@@ -21,6 +21,9 @@ class WeightPlugin {
       case DeviceType.SUNMI:
         type = "sunmi";
         break;
+      case DeviceType.FRESHBASE:
+        type = "freshBase";
+        break;
       case DeviceType.UNKNOW:
         type = "unknow";
         break;
@@ -40,6 +43,13 @@ class WeightPlugin {
 
   static Future tare() async {
     _channel.invokeMethod(ChannelConfig.WEIGHT_TARE);
+  }
+
+  /*
+  * only freshBase support
+  * */
+  static Future openBox() async {
+    _channel.invokeMethod(ChannelConfig.WEIGHT_OPEN_BOX);
   }
 
   static Stream<MethodCall>? get weightStream {

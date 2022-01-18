@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
     // WeightPlugin.weightStream.listen((event) {
     //
     // });
-    WeightPlugin.initWeight(DeviceType.SUNMI);
+    WeightPlugin.initWeight(DeviceType.FRESHBASE);
 
     if (!mounted) return;
 

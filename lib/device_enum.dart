@@ -1,1 +1,1 @@
-enum DeviceType { SUNMI, UNKNOW }
+enum DeviceType { SUNMI, FRESHBASE, UNKNOW }

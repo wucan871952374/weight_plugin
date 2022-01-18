@@ -9,6 +9,8 @@ interface IWeight {
     fun zero()
 
     fun tare()
+
+    fun openBox()
 }
 
 interface WeightCallback {

@@ -32,4 +32,7 @@ class UNKnowWeightImp: IWeight{
     override fun tare() {
     }
 
+    override fun openBox() {
+    }
+
 }

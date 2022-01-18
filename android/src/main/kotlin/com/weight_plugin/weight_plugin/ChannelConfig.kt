@@ -14,11 +14,15 @@ object ChannelConfig {
     //去皮或清皮
     const val WEIGHT_TARE = "weight_tare"
 
+    //开钱箱
+    const val WEIGHT_OPEN_BOX = "weight_open_box"
 }
 
 object DeviceType {
 
     const val SUNMI = "sunmi"
+
+    const val FRESHBASE = "freshBase"
 
     const val UNKNOW = "unknow"
 

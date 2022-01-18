@@ -60,4 +60,7 @@ class SunWeightImp: IWeight{
         scaleManager.tare()
     }
 
+    override fun openBox() {
+    }
+
 }
