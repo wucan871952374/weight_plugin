@@ -30,8 +30,6 @@ flutter:
       android:
         package: com.weight_plugin.weight_plugin
         pluginClass: WeightPlugin
-      ios:
-        pluginClass: WeightPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
